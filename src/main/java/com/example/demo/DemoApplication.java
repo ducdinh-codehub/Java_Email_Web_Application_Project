@@ -8,17 +8,16 @@ import org.springframework.context.event.EventListener;
 
 @SpringBootApplication
 public class DemoApplication {
-        @Autowired
-        private EmailSenderService senderService;
-
+        //@Autowired
+        //private EmailSenderService senderService;
 	public static void main(String[] args) {
 		SpringApplication.run(DemoApplication.class, args);
 	}
 
-        @EventListener(ApplicationReadyEvent.class)
-        public void sendMail(){
-            //senderService.sendEmail("dinhduc31197@gmail.com", 
-            //                        "Hello", 
-            //                        "Try to testing email service");
-        }
+        //@EventListener(ApplicationReadyEvent.class)
+        //public void sendMail(){
+        //    senderService.sendEmail("dinhduc31197@gmail.com", 
+        //                            "Hello", 
+        //                            "Try to testing email service");
+        //}
 }
